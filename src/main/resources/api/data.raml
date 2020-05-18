@@ -1,0 +1,19 @@
+#%RAML 1.0
+title: my-api
+baseUri: my-custom-api
+version: 1.0
+description: Hello World API
+protocols: [HTTP]
+
+/hello: 
+  displayName: hello
+  description: return hello message
+  get:
+    responses:
+     200:
+        body:
+          application/json:
+            example: |
+              {
+                "message": "Hello World"
+              }
